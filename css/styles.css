@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --questria: 'Questrial', sans-serif;
+    --leto: 'Lato', sans-serif;
+    --montesrat: 'Montserrat', sans-serif;
+    --primaryClr: #FEDCDA;
+    --whiteClr: #ffffff;
+    --blackClr: #000000;
+}
+
+body {
+    background-color: var(--primaryClr);
+    font-family: var(--questria);
+}
+
+.container {
+    overflow: hidden !important;
+    position: relative !important;
+}
+
+.topLogo {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+}
+
+.topLogo h1 {
+    color: var(--blackClr);
+    font-family: var(--montesrat);
+    font-weight: 300;
+    font-size: 60px;
+    letter-spacing: -5px;
+}
+
+.topLogoText {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    width: 100%;
+}
+
+.topLogoText img {
+    width: 150px;
+    height: 150px;
+}
+
+.logoBottomText h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logoBottomText h5 {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.name {
+    margin: 1% 0px;
+}
+
+.name h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.name h4 {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.details p {
+    margin: 0 !important;
+}
+
+table {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+th {
+    text-align: start !important;
+    font-weight: 400;
+}
+
+th,
+td {
+    padding: 10px 8px !important;
+}
+
+tr:nth-child(1) {
+    border-bottom: 1px solid black;
+}
+
+tr:nth-child(5) td {
+    padding-bottom: 20px !important;
+}
+
+.allTotal p {
+    margin: 0;
+}
+
+.allTotal h5 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 1px;
+}
+
+.detailsBottomText {
+    margin-top: 5px;
+}
+
+.detailsBottomText p {
+    margin: -6px 0px;
+}
+
+.subTotal p {
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.subTotal p:nth-child(3) {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.signature {
+    margin-top: 25%;
+    width: 30%;
+    text-align: center;
+    position: relative;
+}
+.sigImg{
+    position: absolute;
+    top: -150%;
+    left: 20%;
+}
+.sigHr {
+    background-color: var(--blackClr);
+    width: 100%;
+}
+
+.signature p {
+    margin-top: -5px;
+}
+
+@media print {
+    * {
+        print-color-adjust: exact;
+        background-color: var(--primaryClr);
+    }
+}
